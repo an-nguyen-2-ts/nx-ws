@@ -72,7 +72,8 @@
       "outputs": ["coverage/apps/dop"],
       "options": {
         "jestConfig": "apps/dop/jest.config.js",
-        "passWithNoTests": true
+        "passWithNoTests": true,
+        "watch": true
       }
     }
   },
