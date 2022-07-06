@@ -10,17 +10,13 @@
     "noImplicitOverride": true,
     "noPropertyAccessFromIndexSignature": true,
     "noImplicitReturns": true,
-    "noFallthroughCasesInSwitch": true,
-    "rootDir": "."
+    "noFallthroughCasesInSwitch": true
   },
   "files": [],
   "include": [],
-  "typeAcquisition": {
-    "include": ["jest"]
-  },
   "references": [
     {
-      "path": "./tsconfig.app.json"
+      "path": "./tsconfig.lib.json"
     },
     {
       "path": "./tsconfig.spec.json"

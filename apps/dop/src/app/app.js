@@ -1,21 +1,18 @@
 import styled from 'styled-components';
-import NxWelcome from './nx-welcome';
-
 import { Route, Routes, Link } from 'react-router-dom';
+
+import NxWelcome from './nx-welcome';
+import Card from '../components/card/card';
+
 const StyledApp = styled.div`
   // Your style here
 `;
+
 export function App() {
   return (
     <StyledApp>
       <NxWelcome title="dop" />
-
-      {/* START: routes */}
-      {/* These routes and navigation have been generated for you */}
-      {/* Feel free to move and update them to fit your needs */}
-      <br />
-      <hr />
-      <br />
+      <Card />
       <div role="navigation">
         <ul>
           <li>
