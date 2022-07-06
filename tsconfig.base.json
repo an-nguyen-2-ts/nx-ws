@@ -14,9 +14,7 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {
-      "@native-nx-ws/ui-share": ["libs/ui-share/src/index.js"]
-    }
+    "paths": {}
   },
   "exclude": ["node_modules", "tmp"]
 }

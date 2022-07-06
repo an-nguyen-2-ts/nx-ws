@@ -4,8 +4,6 @@ import { Route, Routes, Link } from 'react-router-dom';
 import NxWelcome from './nx-welcome';
 import Card from '../components/card/card';
 
-import { UiShare } from '@native-nx-ws/ui-share';
-
 const StyledApp = styled.div`
   // Your style here
 `;
@@ -13,7 +11,6 @@ const StyledApp = styled.div`
 export function App() {
   return (
     <StyledApp>
-      <UiShare />
       <NxWelcome title="dop" />
       <Card />
       <div role="navigation">
