@@ -40,5 +40,6 @@
         "linter": "eslint"
       }
     }
-  }
+  },
+  "defaultProject": "dop"
 }
