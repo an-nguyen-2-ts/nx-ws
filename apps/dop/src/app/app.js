@@ -4,6 +4,8 @@ import { Route, Routes, Link } from 'react-router-dom';
 import NxWelcome from './nx-welcome';
 import Card from '../components/card/card';
 
+import { DopUi, DopButton } from '@native-nx-ws/dop-ui';
+
 const StyledApp = styled.div`
   // Your style here
 `;
@@ -11,6 +13,9 @@ const StyledApp = styled.div`
 export function App() {
   return (
     <StyledApp>
+      <DopUi />
+      <br />
+      <DopButton />
       <NxWelcome title="dop" />
       <Card />
       <div role="navigation">

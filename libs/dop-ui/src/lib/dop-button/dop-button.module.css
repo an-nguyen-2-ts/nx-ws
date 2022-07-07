@@ -1,0 +1,17 @@
+/*
+ * Replace this with your own classes
+ *
+ * e.g.
+ * .container {
+ * }
+*/
+
+.container {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 40px;
+  padding: 0 10px;
+  background-color: #cfc;
+  color: #000;
+  cursor: pointer;
+}
