@@ -31,5 +31,22 @@
       "extends": ["plugin:@nrwl/nx/javascript"],
       "rules": {}
     }
+  ],
+  "@nrwl/nx/enforce-module-boundaries": [
+    "error",
+    {
+      // update depConstraints based on your tags
+      "allow": [],
+      "depConstraints": [
+        {
+          "sourceTag": "scope:shared-ui",
+          "onlyDependOnLibsWithTags": ["scope:shared-ui"]
+        },
+        {
+          "sourceTag": "scope:client",
+          "onlyDependOnLibsWithTags": ["scope:shared-ui", "scope:client"]
+        }
+      ]
+    }
   ]
 }
