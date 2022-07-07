@@ -2,6 +2,7 @@
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "sourceRoot": "apps/dop/src",
   "projectType": "application",
+  "tags": ["scope:client", "type:app"],
   "targets": {
     "build": {
       "executor": "@nrwl/web:webpack",
@@ -76,6 +77,5 @@
         "watch": true
       }
     }
-  },
-  "tags": []
+  }
 }

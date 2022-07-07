@@ -35,16 +35,32 @@
   "@nrwl/nx/enforce-module-boundaries": [
     "error",
     {
-      // update depConstraints based on your tags
       "allow": [],
+      // update depConstraints based on your tags
       "depConstraints": [
         {
-          "sourceTag": "scope:shared-ui",
-          "onlyDependOnLibsWithTags": ["scope:shared-ui"]
+          "sourceTag": "scope:client",
+          "onlyDependOnLibsWithTags": ["scope:shared", "scope:client"]
         },
         {
-          "sourceTag": "scope:client",
-          "onlyDependOnLibsWithTags": ["scope:shared-ui", "scope:client"]
+          "sourceTag": "scope:shared",
+          "onlyDependOnLibsWithTags": ["scope:shared"]
+        },
+        {
+          "sourceTag": "scope:client-e2e",
+          "onlyDependOnLibsWithTags": ["scope:client-e2e"]
+        },
+        {
+          "sourceTag": "type:app",
+          "onlyDependOnLibsWithTags": ["type:ui", "type:ui"]
+        },
+        {
+          "sourceTag": "type:ui",
+          "onlyDependOnLibsWithTags": ["type:ui", "type:util"]
+        },
+        {
+          "sourceTag": "type:util",
+          "onlyDependOnLibsWithTags": ["type:util"]
         }
       ]
     }
