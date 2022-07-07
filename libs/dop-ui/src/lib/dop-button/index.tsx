@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import styles from './dop-button.module.css';
 
 /* eslint-disable-next-line */
 export interface DopButtonProps {}
@@ -22,7 +21,7 @@ const StyledButton = styled.button`
 
 export function DopButton(props: DopButtonProps) {
   return (
-    <StyledButton className={styles['container']}>
+    <StyledButton>
       DopButton!
     </StyledButton>
   );
