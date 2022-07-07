@@ -16,7 +16,8 @@
       "outputs": ["coverage/libs/dop-ui"],
       "options": {
         "jestConfig": "libs/dop-ui/jest.config.ts",
-        "passWithNoTests": true
+        "passWithNoTests": true,
+        "watch": true
       }
     }
   }
