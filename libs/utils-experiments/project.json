@@ -1,0 +1,33 @@
+{
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/utils-experiments/src",
+  "projectType": "library",
+  "tags": ["scope:shared", "type:util-experiment"],
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/utils-experiments",
+        "main": "libs/utils-experiments/src/index.ts",
+        "tsConfig": "libs/utils-experiments/tsconfig.lib.json",
+        "assets": ["libs/utils-experiments/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/utils-experiments/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/utils-experiments"],
+      "options": {
+        "jestConfig": "libs/utils-experiments/jest.config.ts",
+        "passWithNoTests": true
+      }
+    }
+  }
+}

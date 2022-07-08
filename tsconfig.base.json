@@ -16,7 +16,8 @@
     "baseUrl": ".",
     "paths": {
       "@native-nx-ws/dop-ui": ["libs/dop-ui/src/index.ts"],
-      "@native-nx-ws/utils": ["libs/utils/src/index.ts"]
+      "@native-nx-ws/utils": ["libs/utils/src/index.ts"],
+      "@native-nx-ws/utils-experiments": ["libs/utils-experiments/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

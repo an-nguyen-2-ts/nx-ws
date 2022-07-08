@@ -43,6 +43,10 @@
               {
                 "sourceTag": "type:util",
                 "onlyDependOnLibsWithTags": ["type:util"]
+              },
+              {
+                "sourceTag": "type:util-experiment",
+                "onlyDependOnLibsWithTags": ["type:util", "type:util-experiment"]
               }
             ]
           }
