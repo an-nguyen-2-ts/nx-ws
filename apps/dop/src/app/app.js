@@ -5,6 +5,7 @@ import NxWelcome from './nx-welcome';
 import Card from '../components/card/card';
 
 import { DopUi, DopButton } from '@native-nx-ws/dop-ui';
+import { Utils } from '@native-nx-ws/utils';
 
 const StyledApp = styled.div`
   // Your style here
@@ -14,6 +15,7 @@ export function App() {
   return (
     <StyledApp>
       <DopUi />
+      <Utils />
       <br />
       <DopButton />
       <NxWelcome title="dop" />
