@@ -1,8 +1,8 @@
 /* eslint-disable */
 module.exports = {
   displayName: 'dop',
-  setupFilesAfterEnv: ['<rootDir>/setupTest.js'],
   preset: '../../jest.preset.js',
+  setupFilesAfterEnv: ['<rootDir>/jest.setup.ts'],
   testEnvironment: 'jsdom',
   transform: {
     '^(?!.*\\.(js|jsx|ts|tsx|css|json)$)': '@nrwl/react/plugins/jest',
