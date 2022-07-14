@@ -3,7 +3,6 @@
   "version": 2,
   "projects": {
     "dop": "apps/dop",
-    "dop-e2e": "apps/dop-e2e",
     "dop-ui": "libs/dop-ui",
     "utils": "libs/utils",
     "utils-experiments": "libs/utils-experiments"
